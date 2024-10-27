@@ -1,27 +1,19 @@
 import { useState } from 'react';
 import './Accordion.css';
 
-const Accordion = ({title, content }: { title: string; content: string }) => {
-  const [hidden, setHidden] = useState(true);
-
-  const handleAnswer = () => {
-    setHidden(!hidden);  
-  };
-
+const Accordion = ({title, content }) => {
+  const [isActive, setIsActive] = useState(false);
   return (
-    <div className="main-container">
       <div className="accordion-container">
-        <div className="question" onClick={handleAnswer}>
-          {title}
-          <div>{hidden ? '+' : '-'}</div>
+        <div className="question" onClick={()=>  setIsActive(!isActive)}>
+          <div>{title}</div>
+          <div className='sign'>{isActive ? '-' : '+'}</div>
         </div>
-        {!hidden && (
+        {isActive && 
           <div className="answer">
             {content}
-          </div>
-        )}
+          </div>}
       </div>
-    </div>
   );
 };
 

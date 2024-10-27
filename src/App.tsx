@@ -1,6 +1,6 @@
 import Accordion from "./components/Accordion/Accordion";
-
-function App() {
+import './App.css'
+const App = ()=>  {
   const accordionData = [
     {
       title: "Section 1",
@@ -17,15 +17,14 @@ function App() {
             pariatur? Impedit autem esse nostrum quasi, fugiat a aut error cumque
             quidem maiores doloremque est numquam praesentium eos voluptatem amet!
             Repudiandae, mollitia id reprehenderit a ab odit!`,
-    },
+    }
   ];
   return (
-    <>
-        <div>hello</div>
-        {accordionData.map((item, index) => (
-            <Accordion key={index} title={item.title} content={item.content} />
+    <div className="main-container">
+        {accordionData.map(({title,content}) => (
+            <Accordion title={title} content={content} />
         ))}
-    </>
+    </div>
 );
 }
 
