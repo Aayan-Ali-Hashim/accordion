@@ -1,7 +1,11 @@
 import { useState } from 'react';
 import './Accordion.css';
 
-const Accordion = ({title, content }) => {
+interface AccordionProps {
+  title: string;
+  content: string;
+}
+const Accordion: React.FC<AccordionProps> = ({title, content }) => {
   const [isActive, setIsActive] = useState(false);
   return (
       <div className="accordion-container">
