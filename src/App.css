@@ -1,9 +1,13 @@
+
 .main-container{
-    height: 90vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     margin: 0 50vh;
-
-
+    margin-top: 18vh;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    padding-top: 20vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
