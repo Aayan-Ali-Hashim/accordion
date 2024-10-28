@@ -3,25 +3,17 @@ import './App.css'
 const App = ()=>  {
   const accordionData = [
     {
-      title: "Section 1",
-      content: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis sapiente
-            laborum cupiditate possimus labore, hic temporibus velit dicta earum
-            suscipit commodi eum enim atque at? Et perspiciatis dolore iure
-            voluptatem.`,
+      title: "My order arrived, but it’s damaged!",
+      content: `We’re so sorry to hear that! Please email us at hello@eat.com and let us know which flavors were damaged so we can get this sorted out right away.`,
     },
     {
-      title: "Section 2",
-      content: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia veniam
-            reprehenderit nam assumenda voluptatem ut. Ipsum eius dicta, officiis
-            quaerat iure quos dolorum accusantium ducimus in illum vero commodi
-            pariatur? Impedit autem esse nostrum quasi, fugiat a aut error cumque
-            quidem maiores doloremque est numquam praesentium eos voluptatem amet!
-            Repudiandae, mollitia id reprehenderit a ab odit!`,
+      title: "Do you offer expedited shipping?",
+      content: `We don’t offer expedited shipping at this time, but if you’re craving for food right now we promise it’s worth a few day’s wait.`,
     }
   ];
   return (
     <div className="mybody">
-        <h1>FAQ</h1>
+        <h1>Frequently Asked Questions</h1>
     <div className="main-container">
         {accordionData.map(({title,content}) => (
             <Accordion title={title} content={content} />

@@ -12,10 +12,15 @@
     margin-top: 1vh;
     justify-content:space-between;
     min-width: fit-content;
+    border-radius: 4px;
+    align-items: center;
 
   }
   .answer{
     margin-top: 1vh;
     background-color: rgba(184, 184, 184, 0.135);
     padding: 1vh;
+  }
+  .sign{
+    font-size:30px;
   }
