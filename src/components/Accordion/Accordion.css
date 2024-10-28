@@ -11,15 +11,18 @@
     display: flex;
     margin-top: 1vh;
     justify-content:space-between;
-    min-width: fit-content;
+    /* min-width: 100vh; */
     border-radius: 4px;
     align-items: center;
+    flex-wrap: wrap;
 
   }
   .answer{
     margin-top: 1vh;
     background-color: rgba(184, 184, 184, 0.135);
     padding: 1vh;
+    display: flex;
+    flex-wrap: wrap;
   }
   .sign{
     font-size:30px;

@@ -1,9 +1,29 @@
 
 .mybody{
   background-image: url('./assets/bgimge.jpg');
-  background-size: cover;        /* Ensures the image covers the entire area */
-  background-position: center;   /* Centers the image */
-  background-repeat: no-repeat;  /* Prevents the image from repeating */
-  height: 100vh;                 /* Makes sure the body fills the viewport height */
-  margin: 0; 
+  background-repeat:no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position:center;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width : 300px) {
+  [class*="main-container"] {
+    margin: 0 1vh;
+  }
+}
+
+
+@media only screen and (min-width : 950px) {
+  [class*="main-container"] {
+    margin: 0 30vh;
+  }
 }

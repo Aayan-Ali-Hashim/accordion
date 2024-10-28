@@ -13,7 +13,7 @@ const App = ()=>  {
   ];
   return (
     <div className="mybody">
-        <h1>Frequently Asked Questions</h1>
+        <h1 className="header">Frequently Asked Questions</h1>
     <div className="main-container">
         {accordionData.map(({title,content}) => (
             <Accordion title={title} content={content} />
